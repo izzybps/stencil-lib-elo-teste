@@ -6,346 +6,434 @@
 @import '../../../assets/styles.69e415ea1f692afd.css';
 
 .p-dropdown {
-	width: 100% !important;
+  width: 100% !important;
 }
 
 .map {
-	width: 100%;
-	height: 600px;
+  width: 100%;
+  height: 600px;
 }
 
 .control {
-	border-radius: 4px;
+  border-radius: 4px;
 }
 
 .list-items {
-	padding: 0
+  padding: 0
 }
 
-.fullscreen:-webkit-full-screen {
-	height: 100%;
-	margin: 0;
+.fullscreen:full-screen {
+  height: 100%;
+  margin: 0;
 }
 
 .fullscreen:fullscreen {
-	height: 100%;
+  height: 100%;
 }
 
 .fullscreen {
-	margin-bottom: 10px;
-	width: 100%;
-	height: 500px;
-	display: flex;
-	position: relative;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
 }
 
 .mapa {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .mapa .ol-zoom {
-	top: 3.5em;
-	right: 0.5em;
-	left: unset;
+  top: 3.5em;
+  right: 0.5em;
+  left: unset;
 }
 
 .mapa:fullscreen {
-	height: 100%;
+  height: 100%;
 }
 
-.mapa:-webkit-full-screen {
-	height: 100% !important;
-	margin: 0;
+.mapa:full-screen {
+  height: 100% !important;
+  margin: 0;
 }
 
 .mapa .ol-rotate {
-	top: 3em;
+  top: 3em;
 }
 
 .control {
-	display: inline-block;
-	width: 350px;
-	position: absolute;
-	z-index: 1;
-	margin-left: auto;
-	max-width: 100%;
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  width: 300px;
+  max-width: 100%;
+  margin-left: auto;
 
 }
 
 .ol-mouse-position {
-	bottom: 10px;
-	top: auto;
-	color: black;
-	background: rgba(255, 255, 255, 0.5);
-	padding: 5px;
-	border-radius: 10px;
-	right: 0.5em;
-	font-size: 0.9em;
+  top: auto;
+  right: 0.5em;
+  bottom: 10px;
+  padding: 5px;
+  font-size: 0.9em;
+  color: black;
+  background: rgb(255 255 255 / 50%);
+  border-radius: 10px;
 }
 
 .ol-attribution {
-	display: none;
+  display: none;
 }
 
-.dropdown-button {
-	background-color: #ffffff;
-	color: gray;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-	border-radius: 4px 4px 0px 0px;
+.dropdownButton {
+  /* padding: 16px; */
+  font-size: 16px;
+  color: gray;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.gifDialog .p-dialog .p-dialog-content {
+  padding: 5px;
+}
+
+.gifDialog .p-dialog .p-dialog-header {
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.gifDialog .p-dialog .p-dialog-header .p-dialog-title {
+  font-size: 1rem;
+}
+
+.gifDialog {
+  position: absolute;
+
+  /* top: 40%; */
+  left: 30%;
+
+  /* transform: translate(-50%, -50%); */
+  z-index: 10000;
 }
 
 .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	border-top: 1px;
-	border-color: gray;
-	width: 100%;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
-	z-index: 1;
-	padding: 0px 20px;
-	overflow: auto;
-	max-height: 350px;
-	border-radius: 0px 0px 8px 8px;
+  position: absolute;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  min-width: 100px;
+  /* Adicione o tamanho mínimo que desejar */
+  min-height: 100px;
+  /* Adicione o tamanho mínimo que desejar */
+  padding: 0 20px;
+  overflow: auto;
+  resize: both;
+  background-color: #f9f9f9;
+  border-color: gray;
+  border-top: 1px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 40%);
 }
 
 .break {
-	flex-basis: 100%;
-	height: 0;
+  flex-basis: 100%;
+  height: 0;
 }
 
 .list-item-layer {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	padding: 1rem;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0.5rem 1.0rem 0.5rem 1rem;
 }
 
 .info-item {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 10px;
 
 }
 
 .list-item-layer:hover {
-	background-color: rgb(243, 243, 243);
+  background-color: rgb(243 243 243);
 }
 
 .item-title {
-	width: 80%;
-	text-overflow: ellipsis;
-	font-size: 1.0em;
-	overflow: hidden;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .drag {
-	cursor: move;
+  cursor: move;
 }
 
 .control-label {
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	font-size: 1.0em;
-	overflow: hidden;
+  overflow: hidden;
+  font-size: 1.0em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .ol-popup {
-	position: absolute;
-	/* top: -30px; */
-	background-color: white;
-	/*--webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));*/
-	filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
-	padding: 15px;
-	border-radius: 10px;
-	border: 1px solid #cccccc;
-	bottom: 12px;
-	left: -50px;
-	min-width: 180px;
+  position: absolute;
+  bottom: 12px;
+  left: -50px;
+  min-width: 180px;
+  padding: 15px;
+
+  /* top: -30px; */
+  background-color: white;
+
+  /* --webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2)); */
+  filter: drop-shadow(0 1px 4px rgb(0 0 0 / 20%));
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
-.ol-popup:after,
-.ol-popup:before {
-	top: 100%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
+.ol-popup::after,
+.ol-popup::before {
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  content: " ";
+  border: solid transparent;
 }
 
-.ol-popup:after {
-	border-top-color: white;
-	border-width: 10px;
-	left: 48px;
-	margin-left: -10px;
+.ol-popup::after {
+  left: 48px;
+  margin-left: -10px;
+  border-width: 10px;
+  border-top-color: white;
 }
 
-.ol-popup:before {
-	border-top-color: #cccccc;
-	border-width: 11px;
-	left: 48px;
-	margin-left: -11px;
+.ol-popup::before {
+  left: 48px;
+  margin-left: -11px;
+  border-width: 11px;
+  border-top-color: #ccc;
 }
 
 .opacity {
-	cursor: pointer;
-	width: 30%;
+  width: 30%;
+  cursor: pointer;
 }
 
 ::ng-deep .ol-zoom {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 
 ::ng-deep .ol-zoomslider {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 
 .ol-zoomslider {
-	top: 5.5em;
-	right: 0.5em;
-	left: unset;
+  top: 5.5em;
+  right: 0.5em;
+  left: unset;
 }
 
 .ol-zoom .ol-zoom-out {
-	margin-top: 13.5em;
+  margin-top: 13.5em;
 }
 
 #map-popup-content {
-	margin-top: 10px;
-	max-height: 200px;
-	overflow: auto;
+  max-height: 200px;
+  margin-top: 10px;
+  overflow: auto;
 }
 
 .ol-popup-closer {
-	text-decoration: none;
-	position: absolute;
-	top: 2px;
-	right: 8px;
-	cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.ol-popup-closer:after {
-	content: "✖";
+.ol-popup-closer::after {
+  content: "✖";
 }
 
 
 
-/*basemap*/
+/* basemap */
 .base-map-container {
-	display: flex;
-	position: absolute;
-	/* z-index: 99999; */
-	top: 80px;
-	right: 0.5em;
+  position: absolute;
+
+  /* z-index: 99999; */
+  top: 80px;
+  right: 0.5em;
+  display: flex;
 
 }
 
 .btn-base-map {
-	padding: 0.5rem 1.0rem;
-	border: none;
-	outline: none;
-	background-color: white;
-	color: gray;
-	border-radius: 3px;
-	cursor: pointer;
+  padding: 0.5rem 1.0rem;
+  color: gray;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  outline: none;
 }
 
 .btn-base-map:hover {
-	border: 1px solid #d0d0d0;
-	margin: -1px;
+  margin: -1px;
+  border: 1px solid #d0d0d0;
 }
 
 .btn-base-map.active {
-	box-shadow: 0 0 0 0.125rem rgba(13, 128, 250, 0.5);
+  box-shadow: 0 0 0 0.125rem rgb(13 128 250 / 50%);
 
 }
 
 .drop-base-map-wrapper {
-	position: relative;
-	display: flex;
-	flex-direction: row-reverse;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .drop-base-map-menu {
-	display: none;
-	position: absolute;
-	white-space: nowrap;
-	border-radius: 25px;
+  position: absolute;
+  display: none;
+  white-space: nowrap;
+  border-radius: 25px;
 }
 
 .drop-base-map-menu.active {
-	display: block;
-	background-color: white;
-	position: absolute;
-	white-space: nowrap;
-	border-radius: 25px;
+  position: absolute;
+  display: block;
+  white-space: nowrap;
+  background-color: white;
+  border-radius: 25px;
 }
 
 .drop-base-mapdown {
-	top: 100%;
-	margin-top: 0.125rem;
+  top: 100%;
+  margin-top: 0.125rem;
+}
+
+.dropdown-option .p-dropdown {
+  width: 200px;
+}
+
+.dropdown-option {
+  padding-right: 30px;
+}
+
+.dropdown-option .p-dropdown .p-dropdown-label {
+  padding: 6px;
 }
 
 .drop-base-mapup {
-	bottom: 100%;
-	margin-bottom: 0.125rem;
+  bottom: 100%;
+  margin-bottom: 0.125rem;
 }
 
 
 .drop-base-mapleft {
-	right: 100%;
-	top: 0%;
-	margin-right: 0.125rem;
+  top: 0%;
+  right: 100%;
+  margin-right: 0.125rem;
 }
 
 .drop-base-mapright {
-	left: 100%;
-	top: 0%;
-	margin-left: 0.125rem;
+  top: 0%;
+  left: 100%;
+  margin-left: 0.125rem;
 }
 
 .drop-base-map-menu a {
-	display: block;
-	padding: 0.5rem 1rem;
-	text-decoration: none;
-	color: #343434;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #343434;
+  text-decoration: none;
 }
 
 .layer-icon {
-	content: url('./assets/layers-icon.svg');
-	width: 30px;
-	height: 30px;
+  width: 30px;
+  height: 30px;
+  content: url('./assets/layers-icon.svg');
 }
 
 .compass {
-	bottom: 40px;
-	width: 60px;
-	right: 0.5em;
-	top: auto !important;
+  top: auto !important;
+  right: 0.5em;
+  bottom: 40px;
+  width: 60px;
 }
 
 .ol-compassctrl {
-	bottom: 40px;
-	width: 60px;
-	height: 60px;
-	top: auto !important;
+  top: auto !important;
+  bottom: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 .legend {
-	display: inline-block !important;
-	width: 350px;
-	position: absolute;
-	z-index: 9999;
-	bottom: 50px;
+  position: absolute;
+  bottom: 50px;
+  z-index: 9999;
+  display: inline-block !important;
+  width: 350px;
+}
+
+.p-dialog-mask {
+  position: relative !important;
+}
+
+.menuItens .p-tieredmenu {
+  width: 70px;
+}
+
+.menuItens .p-tieredmenu .p-menuitem-link .p-menuitem-icon {
+  font-size: 20px;
+}
+
+.p-fieldset .p-fieldset-content {
+  padding: 0;
+}
+
+.p-fieldset.p-fieldset-toggleable .p-fieldset-legend a {
+  padding: 0.4rem;
+  font-size: 10px;
+}
+
+.p-fieldset {
+  color: black;
+  background: none;
+}
+
+#layertree {
+  padding-top: 10px;
+}
+
+.ol-red {
+  font-weight: bold;
+  color: #969595;
+}
+
+.p-divider-content {
+  background-color: #f9f9f9 !important;
+}
+
+.resizable-container {
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+  /* Garante que o conteúdo redimensionado seja rolável */
+  resize: both;
+  /* Este estilo é importante para mostrar o cursor de redimensionamento */
+  border: 1px solid black;
 }
